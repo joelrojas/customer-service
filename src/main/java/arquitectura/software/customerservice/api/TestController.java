@@ -24,6 +24,8 @@ public class TestController {
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public ResponseEntity<String> test() {
         LOGGER.info("Invocando al servicio REST al micro-servicio CUSTOMER SERVICE");
+        LOGGER.info("Invocando al servicio REST al micro-servicio CUSTOMER SERVICE");
+        LOGGER.info("Invocando al servicio REST al micro-servicio CUSTOMER SERVICE");
         String result = testBl.invokeTransafer();
         return new ResponseEntity<>("INVOCACION CUSTOMER_SERVICE --> " + result, HttpStatus.OK);
     }
