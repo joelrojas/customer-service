@@ -1,5 +1,5 @@
 #!/bin/sh
 
 mkdir target/dependency
-(cd target/dependency; tar -zxf ../*.jar)
+(cd target/dependency; jar -xf ../*.jar)
 ls -ahl target
